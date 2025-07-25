@@ -4,7 +4,9 @@
   "description": "- Backend development (Javascript, Express/API) - Front-end development (HTML and CSS) - Databases (SQL) /Docker - MVC structure - UX methodologies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-db": "node ./database/setup.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,10 @@
   },
   "homepage": "https://github.com/Tharanginy/Bridget-Jones-Diary#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "nodemon": "^3.1.10",
     "pg": "^8.16.3"
   }
 }
